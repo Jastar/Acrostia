@@ -1,0 +1,39 @@
+/* font-family: "Damion"; */
+@font-face {
+	font-family: "Damion";
+	src: url("../fonts/Damion/Damion-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "LatoBlack"; */
+@font-face {
+	font-family: "LatoBlack";
+	src: url("../fonts/LatoBlack/Lato-Black.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "LatoBold"; */
+@font-face {
+	font-family: "LatoBold";
+	src: url("../fonts/LatoBold/Lato-Bold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "LatoLight"; */
+@font-face {
+	font-family: "LatoLight";
+	src: url("../fonts/LatoLight/Lato-Light.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "LatoRegular"; */
+@font-face {
+	font-family: "LatoRegular";
+	src: url("../fonts/LatoRegular/Lato-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}

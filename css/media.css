@@ -1,0 +1,161 @@
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  nav ul#navigation {
+    display: none; }
+    nav ul#navigation li {
+      display: block;
+      background-color: #74c7d5;
+      opacity: 0.8;
+      max-width: 100%;
+      -webkit-transition: opacity 0.5s;
+      transition: opacity 0.5s; }
+      nav ul#navigation li:nth-child(1) {
+        border-radius: 15px 15px 0px 0px; }
+      nav ul#navigation li:nth-child(5) {
+        border-radius: 0px 0px 15px 15px; }
+      nav ul#navigation li:hover {
+        opacity: 1; }
+      nav ul#navigation li a {
+        display: block;
+        padding-right: 10px;
+        font-size: 18px;
+        line-height: 60px;
+        color: #fff;
+        font-family: "LatoRegular"; }
+
+  #home .goodIdeas {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  #home h1 {
+    font-size: 70px;
+    line-height: 60px; }
+  #home h2 {
+    font-size: 25px;
+    line-height: 25px; }
+
+  #services h6 {
+    line-height: 28px; }
+  #services p {
+    margin-bottom: 55px; }
+  #services div.services {
+    max-width: 350px;
+    margin: 0 auto; }
+
+  #work p {
+    margin-bottom: 10px; }
+  #work #photography figcaption.cssarrow {
+    max-width: 260px; }
+
+  #contacts h2 {
+    font-size: 30px;
+    line-height: 28px; }
+  #contacts div.col-lg-12 p {
+    margin-bottom: 20px;
+    max-height: 50px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  #contacts form input[type="email"] {
+    margin-top: 18px; }
+  #contacts form textarea {
+    max-height: 110px; } }
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  #home h1 {
+    font-size: 138.48px;
+    line-height: 138.48px; }
+  #home h2 {
+    font-size: 60px;
+    line-height: 58px; } }
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  nav ul#navigation {
+    display: block; }
+    nav ul#navigation li {
+      display: inline;
+      background-color: transparent;
+      opacity: 1; }
+      nav ul#navigation li a {
+        padding: 60px 20px 30px 20px;
+        display: inline; }
+      nav ul#navigation li a {
+        font-size: 18px;
+        line-height: 60px;
+        color: #fff;
+        font-family: "LatoRegular";
+        -webkit-transition: background-color 0.5s ease-out;
+        transition: background-color 0.5s ease-out; }
+        nav ul#navigation li a:hover {
+          background-color: #74c7d5;
+          border-radius: 0 0 5px 5px; }
+  nav button.showMenu {
+    display: none; }
+
+  #work #photography figcaption.cssarrow {
+    max-width: 230px; }
+  #work #photography figure.portfolio img {
+    width: 230px;
+    height: 170px; }
+  #work p {
+    margin: 30px auto 50px auto; }
+
+  #contacts div.col-lg-12 p {
+    margin-bottom: 60px; }
+  #contacts form input[type="submit"] {
+    margin: 0 auto 90px auto; }
+  #contacts form textarea {
+    max-height: 100%; } }
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  #home div.goodIdeas h2 {
+    max-width: 370px; }
+
+  #services h6 {
+    font-size: 15px;
+    line-height: 43.5px; }
+  #services p {
+    margin: 18px auto 60px; }
+  #services div.services h4 {
+    font-size: 25px; }
+
+  #work #photography .cssarrow {
+    max-width: 260px; }
+  #work #photography figure.portfolio img {
+    width: 212px;
+    height: 150px; }
+
+  #contacts div.col-lg-12 p {
+    margin-bottom: 110px; }
+  #contacts form input[type="submit"] {
+    margin: 0 auto 40px auto; } }
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  #contacts form input[type="text"], #contacts form input[type="email"] {
+    width: 100%;
+    max-width: 270px; }
+  #contacts form input[type="submit"] {
+    margin: 0 auto 120px auto; }
+  #contacts form textarea {
+    max-width: 544px; }
+
+  #work #photography figcaption.cssarrow {
+    max-width: 260px; }
+  #work #photography figure.portfolio img {
+    width: 260px;
+    height: 200px; } }

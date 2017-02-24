@@ -1,0 +1,295 @@
+@import "main.scss";
+
+
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    nav {
+        ul#navigation {
+            display: none;  
+                li {
+                    display: block;
+                    background-color: #74c7d5;
+                    opacity: 0.8;
+                    max-width: 100%;
+                    &:nth-child(1) {
+                        border-radius: 15px 15px 0px 0px;
+                    };
+                    &:nth-child(5) {
+                        border-radius: 0px 0px 15px 15px;
+                    };
+
+                    &:hover {
+                        opacity: 1;
+                    };
+
+                    -webkit-transition: opacity 0.5s;
+                    -o-transition: opacity 0.5s;
+                    transition: opacity 0.5s;
+
+                    a {
+                        display: block;
+                        padding-right: 10px;
+                        @include font(18px, 60px, #fff, "LatoRegular");
+                    }
+                }       
+        }
+    }
+    
+    #home {
+        .goodIdeas {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        h1 {
+            @include font(70px, 60px);
+        }
+        h2 {
+            @include font(25px, 25px);  
+        }
+    }
+
+    #services {
+        h6 {
+            line-height: 28px;
+        }
+
+        p {
+            margin-bottom: 55px;
+        }
+
+        div.services {
+            max-width: 350px;
+            margin: 0 auto;
+        }
+    }
+
+    #work {
+        p {
+            margin-bottom: 10px;
+        }
+
+        #photography {
+            figcaption.cssarrow {
+                max-width: 260px;
+            }
+        }
+    }
+
+    #contacts {
+
+        h2 {
+            @include font(30px, 28px);      
+        }
+        
+        div.col-lg-12 p {
+            margin-bottom: 20px;
+            max-height: 50px;
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+
+        form {
+            input[type="email"] {
+                margin-top: 18px;
+            }
+
+            textarea {
+                max-height: 110px;
+            }
+        }
+    }
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+    #home {
+        h1 {
+            @include font(138.48px, 138.48px);
+        }
+        h2 {
+            @include font(60px, 58px);      
+        }
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    nav {
+        ul#navigation {
+            display: block;
+            li {
+                display: inline;
+                background-color: transparent;
+                opacity: 1;
+                a {
+                    padding: 60px 20px 30px 20px;
+                    display: inline;
+                }
+
+                a {
+                    @include font(18px, 60px, #fff, "LatoRegular");
+                    -webkit-transition: background-color 0.5s ease-out;
+                    -o-transition: background-color 0.5s ease-out;
+                    transition: background-color 0.5s ease-out;
+
+                    &:hover {
+                        background-color: #74c7d5;
+                        border-radius: 0 0 5px 5px;
+                    };
+                }
+
+
+            }
+        }
+
+    button.showMenu {
+        display: none;
+        }
+    }
+
+    #work {
+        #photography {
+            figcaption.cssarrow {
+                max-width: 230px;
+            }
+
+            figure.portfolio {
+                img {
+                    width: 230px; 
+                    height: 170px;
+                }
+            }
+        }
+
+        p {
+            margin: 30px auto 50px auto;
+        }
+    }
+
+    #contacts {
+        div.col-lg-12 p {
+            margin-bottom: 60px;
+        }
+
+        form {
+
+            input[type="submit"] {
+                    margin: 0 auto 90px auto;
+                }
+
+            textarea {
+                max-height: 100%;
+            }
+        }
+
+
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    #home {
+        div.goodIdeas {
+            h2 {
+                max-width: 370px;
+            }
+        }
+    }
+
+    #services {
+        h6 {
+            font-size: 15px;
+            line-height: 43.5px;
+        }
+
+        p {
+            margin: 18px auto 60px;
+        }
+
+        div.services {
+            h4 {
+                font-size: 25px;
+            }
+        }
+    }
+
+    #work {
+        #photography {
+            .cssarrow {
+                max-width: 260px;
+            }
+
+            figure.portfolio {
+                img {
+                    width: 212px; 
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    #contacts {
+
+        div.col-lg-12 p {
+            margin-bottom: 110px;
+        }
+
+        form {
+
+            input[type="submit"] {
+                    margin: 0 auto 40px auto;
+                }
+        }
+    }   
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    #contacts {
+        form {
+            input[type="text"], input[type="email"] {
+                width: 100%;
+                max-width: 270px;
+            }
+
+            input[type="submit"] {
+                    margin: 0 auto 120px auto;
+                }
+            textarea {
+                max-width: 544px;
+            }
+        }
+    }
+
+    #work {
+        #photography {
+            figcaption.cssarrow {
+                max-width: 260px;
+            }
+            figure.portfolio {
+                img {
+                    width: 260px; 
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
